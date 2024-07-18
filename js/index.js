@@ -80,7 +80,7 @@ function createCategory() {
         form.addEventListener("submit", (event) => {
             event.preventDefault();
             const data = new FormData(form);
-            // console.log(Array.from(data));
+           
 
             fetch("http://localhost:5242/api/Categories/CreateCategory", {
                 method: "POST",

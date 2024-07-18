@@ -20,24 +20,26 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script>
+    <script src="js/product-index.js"></script>
     <title>Market Project</title>
   </head>
-  <body onload="loadCategories()">
+  <body onload="loadProducts()">
     <div class="container mt-3">
       <div class="row d-flex justify-content-center">
         <div class="col-md-8">
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Kategori Listesi</h3>
+              <h3 class="card-title">Ürün Listesi</h3>
             </div>
             <div class="card-body">
               <table class="table table-hover table-responsive">
                 <thead>
                   <tr>
                     <th>ID</th>
-                    <th>Kategori</th>
-                    <th>Açıklama</th>
+                    <th>Ürün</th>
+                    <th>Fiyat</th>
+                    <th>Adet</th>
+                    <th>Kategori Adı</th>
                     <th>Eklenme Tarihi</th>
                     <th>Güncelleme Tarihi</th>
                     <th>Durum</th>
@@ -45,15 +47,14 @@
                     <th>Sil</th>
                   </tr>
                 </thead>
-                <tbody id="categories"></tbody>
+                <tbody id="products"></tbody>
               </table>
             </div>
             <div class="card-footer d-flex justify-content-between">
-              
-              <a href="CreateCategory.html" class="btn btn-outline-dark"
-                >Kategori Ekle</a
+              <a href="CreateProduct.html" class="btn btn-outline-dark"
+                >Ürün Ekle</a
               >
-              <a href="Product-index.html" class="btn btn-outline-dark">Ürünleri Listele</a>
+              <a href="index.html" class="btn btn-outline-dark">Kategorileri Listele</a>
             </div>
           </div>
         </div>
